@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans';
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 15%;
+    font-weight: 700;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(65, 3, 94);
+}
+
+strong{
+    white-space: nowrap;
+    color: rgb(172, 109, 231);
+}
+
+.heading{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(98, 97, 97);
+    color: aliceblue;
+}
+
+.section{
+    padding: 40px;
+    background-color: rgb(210, 205, 205);
+}
+/* common css ends here */
+
+
+
+/* navigation bar starts here */
+.nav{
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 15px;
+    background-color: rgb(54, 49, 49);
+    position: fixed;
+    top: 0;
+}
+
+.nav .links .brand{
+    float: left;
+}
+
+.nav .links a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav .links .p a:hover{
+    zoom: 110%;
+    text-decoration: underline 3px solid rgb(168, 85, 247);
+    text-underline-position: under;
+}
+
+.nav .links li{
+    padding: 5px 15px;
+    display: block;
+    float: right;
+}
+
+.nav .links .login_li{
+    padding-top: 0px;
+}
+
+.nav .links .p{
+    padding-top: 10px;
+}
+
+.nav ul li .material-icons{
+    color: aliceblue;
+    padding-top: 6px;
+}
+
+.nav ul li .menu{
+    background-color: rgb(54, 49, 49);
+    border: none;
+    
+}
+
+.nav .links .three_dot{
+    padding-top: 5px;
+    display: none;
+}
+
+/* navigation bar ends here */
+
+
+/* about section starts here */
+.aboutus{
+    overflow: auto;
+    padding: 10rem;
+    text-align: center;
+    background-color: black;
+    background-image: url(../img/about_img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.aboutus .para{
+    padding-top: 15px;
+    font-size: 1.45rem;
+}
+
+.aboutus .buttons{
+    padding: 10px;
+}
+
+.aboutus .buttons a{
+    padding: 0px 5px;
+}
+/* about section ends here */
+
+
+/* our service starts here */
+.ourservices{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+
+.ourservices .card{
+    max-width: 300px;
+    text-align: center;
+    margin: 10px 15px;
+    border: 2px solid rgb(54, 49, 49);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(168, 85, 247);
+}
+
+.ourservices .card img{
+    border-radius: 10px;
+}
+
+.ourservices .card p{
+    padding-top: 10px;
+    padding: 10px;
+}
+/* our service section ends here */
+
+/* button of explore now */
+.buttons_service{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.buttons_service .btn{
+    border-radius: 8px;
+}
+
+
+/* Testimonial section starts here */
+.testimonials{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.testimonials .card{
+    max-width: 300px;
+    text-align: center;
+    margin: 10px 40px;
+    background-color: rgb(151, 149, 149);
+    padding: 30px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+/* Testimonials section ends here */
+
+
+/* contact us section starts here */
+.contactus{
+    text-align: center;
+}
+
+.contactus .contact{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.contactus form{
+    font-weight: 600;
+    text-align: center;
+}
+
+.contactus form input[type=text], input[type=email], textarea{
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+}
+/* contact us ends here */
+
+
+/* footer starts here */
+footer .contact_links{
+    float: right;
+    list-style-type: none;
+    display: flex;
+    padding-top: 5px;
+}
+
+footer .contact_links li{
+    padding: 5px;
+}
+
+.foot{
+    display: inline-block;
+    padding: 15px;
+    font-weight: 600;
+    color: rgb(138,43,226);
+}
+/* footer ends here */
+
+
+@media screen and (max-width: 792px) and (min-width: 0px) {
+    .aboutus{
+        padding: 0.5rem;
+        margin-top: 73px;
+    }
+    .aboutus .para{
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 786px) and (min-width: 0px) {
+    .nav .links .disp_none{
+        display: none;
+        padding: 0px;
+    }
+    .nav .links .three_dot{
+        display: inline-block;
+    }
+    .ourservices, .testimonials{
+        flex-direction: column;
+    }
+    .ourservices .card, .testimonials .card{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    footer .contact_links{
+        float: none;
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+    }
+}
